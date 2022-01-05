@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Merriweather;
+    src: url("./assets/fonts/merriweather-v28-latin-700.ttf");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/inter-v7-latin-regular.ttf");
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
