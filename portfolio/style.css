@@ -8,8 +8,38 @@
     src: url("./assets/fonts/inter-v7-latin-regular.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px; 
+}
+
+.flex-container {
+    display: flex;
+    background-color: rosybrown;
+}
+
+.nav-style {
+    margin-left: auto ;
+}
+
+.list-style {
+    display: flex;
+    list-style: none;
+}
+
+.list-item {
+    padding-right: 30px;
+}
+
+.switch {
+    margin-top: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
 }
