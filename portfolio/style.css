@@ -105,12 +105,9 @@ color: #000000;
 
 .wrapper-hero {
     width: 50%;
-    overflow-x: hidden;
 }
 
-
 .section-title {
-position: relative;
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -118,28 +115,8 @@ font-size: 40px;
 line-height: 80px;
 text-align: center;
 color: #BDAE82;
+background-image: linear-gradient(to top, #000 39px, #bdae82 41px, #000 41px);
 
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    border: 1px solid red;
-    top: 39px;
-    left: 0px;
-    width: 700px;
-    
-}
-
-.section-title::after {
-    content: "";
-    position: absolute;
-    border: 1px solid red;
-    top: 39px;
-    left: 0px;
-    right: 0px;
-    width: 700px;
-    
 }
 
 .skills-items {
@@ -183,12 +160,12 @@ font-size: 20px;
 line-height: 40px;
 text-align: center;
 color: #BDAE82;
-        border: 2px solid #bdae82;
-        background-color: transparent;
-        cursor: pointer;
-        font-family: inherit;
-        padding: 8px 72px 7px 73px;
-        margin-right: 5px;
+border: 2px solid #bdae82;
+background-color: transparent;
+cursor: pointer;
+font-family: inherit;
+padding: 8px 72px 7px 73px;
+margin-right: 5px
 }
 
 .button-items {
@@ -203,5 +180,71 @@ color: #BDAE82;
     gap: 25px;
 }
 
+.wrapper-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-video-player {
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    gap: 25px;
+}
+
+.kind-of-price {
+font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 56px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.description-price {
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.price-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #bdae82 ;
+}
+
+.wrapper-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section-title-contact {
+font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+color: #BDAE82;
+
+}
+
+.section-contacts {
+    background: url('./assets/img/contacts.jpg');
+    background-size: auto 700px;
+    background-position: center center;
+}
 
 
