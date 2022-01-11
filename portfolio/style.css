@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #000;
+}
+
 .header {
     background: url('./assets/img/bg_for_header.jpg');
     background-repeat: no-repeat;
@@ -42,20 +46,46 @@
     padding-right: 30px;
 }
 
-.switch {
-    margin-top: 15px;
+.switch-en {
+margin-top: 15px;
+padding-right: 9px;
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+text-align: center;
+color: #BDAE82;
+}
+
+.switch-ru {
+margin-top: 15px;
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+text-align: center;
+color: #FFFFFF;
+
 }
 
 .nav-link {
-    text-decoration: none;
+text-decoration: none;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+color: #FFFFFF;
+
 }
 
 .hero-container {
     background-image: url('./assets/img/bg_for_header.jpg');
     background-position: center -90px;
     background-repeat: no-repeat;
-    padding-top: 160px;
-    padding-left: 80px;
+
 }
 
 .section-with-pic {
@@ -74,9 +104,12 @@ font-weight: bold;
 font-size: 60px;
 line-height: 120px;
 color: #FFFFFF;
+padding-left: 80px;
+padding-bottom: 10px;
 }
 
 .text-hero {
+padding-left: 80px;
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -92,6 +125,9 @@ background-color: #bdae82;
 cursor: pointer;
 font-family: inherit;
 padding: 8px 72px 7px 73px;
+margin-left: 80px;
+margin-top: 25px;
+margin-bottom: 330px;
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -105,9 +141,11 @@ color: #000000;
 
 .wrapper-hero {
     width: 50%;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 41px, #000 41px);
 }
 
 .section-title {
+padding-top: 100px;
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -115,7 +153,7 @@ font-size: 40px;
 line-height: 80px;
 text-align: center;
 color: #BDAE82;
-background-image: linear-gradient(to top, #000 39px, #bdae82 41px, #000 41px);
+background: #000;
 
 }
 
@@ -245,6 +283,32 @@ color: #BDAE82;
     background: url('./assets/img/contacts.jpg');
     background-size: auto 700px;
     background-position: center center;
+}
+
+.footer {
+    background: #000;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-footer {
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+color: #FFFFFF;
+padding-right: 20px;
+
+}
+
+.social-icons {
+    padding-right: 20px;
 }
 
 
