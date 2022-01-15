@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 .header {
     background: url('./assets/img/bg_for_header.jpg');
     background-repeat: no-repeat;
@@ -23,7 +22,7 @@
 .container {
     width: 1440px;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .flex-container {
@@ -101,14 +100,15 @@ color: #FFFFFF;
     background-image: url('./assets/img/bg_for_header.jpg');
     background-position: center -90px;
     background-repeat: no-repeat;
+    background-color: #000;
 
 }
 
 .section-with-pic {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    margin-bottom: 330px;
+    padding-left: 60px;
+    padding-bottom: 330px;
 }
 
 .section {
@@ -137,8 +137,15 @@ line-height: 40px;
 color: #FFFFFF;
 }
 
-.padding-from-button {
-    padding-bottom: 25px;
+.padding-from-button-hero {
+padding-bottom: 25px;
+margin: 0;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF;
 }
 
 .button-gold {
@@ -457,6 +464,7 @@ color: #FFFFFF;
     gap: 25px;
     padding-left: 115px;
     padding-right: 115px;
+    padding-bottom: 43px;
 }
 
 .padding-from-button {
@@ -464,12 +472,12 @@ color: #FFFFFF;
 }
 
 .coloured-button {
-align-self: flex-start;
+padding-left: 36px;
+padding-right: 36px;
 border: 0;
 background-color: #bdae82;
 cursor: pointer;
 font-family: inherit;
-padding: 8px 39px 7px 39px;
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -480,13 +488,27 @@ color: #000000;
 
 }
 
-.wrapper-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.section-contacts {
+    background: url('./assets/img/contacts.jpg');
+    background-size: auto 700px;
+    background-position: center center;
 }
 
+.wrapper-contacts {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding-right: 20px;
+padding-bottom: 195px;
+    
+}
+
+
 .section-title-contact {
+padding-top: 60px;
+padding-bottom: 40px;
+padding-right: 230px;
+margin: 0;
 font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -496,22 +518,96 @@ color: #BDAE82;
 
 }
 
-.section-contacts {
-    background: url('./assets/img/contacts.jpg');
-    background-size: auto 700px;
-    background-position: center center;
-}    
+.container-full-image {
+    width: 1440px;
+    margin: 0 auto;
+        
+}
+
+.button-gold-contacts {
+    padding: 8px 40px 7px 40px;
+    margin-right: 230px;
+    border: 0;
+    background-color: #bdae82;
+    cursor: pointer;
+    font-family: inherit;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.placeholder-email {
+width: 450px;
+height: 50px;
+margin-bottom: 20px;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #BDAE82;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #BDAE82;
+box-sizing: border-box;
+border-radius: 0px;  
+}
+
+.placeholder-tel {
+width: 450px;
+height: 50px;
+margin-bottom: 20px;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #BDAE82;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #BDAE82;
+box-sizing: border-box;
+border-radius: 0px;  
+}
+
+.placeholder-textarea {
+width: 450px;
+height: 100px;
+margin-bottom: 30px;
+resize: none;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #BDAE82;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid #BDAE82;
+box-sizing: border-box;
+border-radius: 0px; 
+}
+
+.back-footer {
+    background: #000;
+}
 
 .flex-footer {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: #000;
 }
 
-.footer-items {
-    padding-left: 20px;
+.text-footer-other {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF; 
 }
 
 .text-footer {
@@ -521,7 +617,7 @@ font-weight: normal;
 font-size: 20px;
 line-height: 50px;
 color: #FFFFFF;
-padding-right: 20px;
+padding-left: 20px;
 
 }
 
@@ -537,6 +633,12 @@ padding-right: 20px;
 }
 
 .link-footer {
-    text-decoration: none;
+text-decoration: none;
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+color: #FFFFFF;
 }
 
