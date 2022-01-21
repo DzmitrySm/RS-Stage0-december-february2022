@@ -54,7 +54,7 @@ transform: translateY(-50%);
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -605,7 +605,7 @@ color: #BDAE82;
 }
 
 .container-full-image {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
         
 }
@@ -754,6 +754,14 @@ transition: .3s;
 }
 
 @media screen and (max-width: 768px) {
+
+.header {
+    background: url(./assets/img/hero-mini.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+
 .header-burger {
     display: block;
 
@@ -761,8 +769,7 @@ transition: .3s;
 
 .container {
     max-width: 768px;
-    margin: 0 auto;
-    padding: 0 60px;
+    padding: 0;
 }
 
 .nav-style {
@@ -775,6 +782,12 @@ transition: .3s;
     background-color: black;
     z-index: 3;
     transform: translateX(100%);
+    transition: .2s;
+    overflow: hidden;
+}
+
+.nav-style-active {
+    transform: translateX(0);
 }
 
 .list-item {
@@ -820,6 +833,122 @@ transform: translateY(-50%) rotate(45deg);
 .header-nav-close-line:last-child {
 transform: translateY(-50%) rotate(-45deg);   
 }
+
+.section-title::before {
+    width: 121px;
+    left: 0;
+    
+}
+
+.section-title::after {
+    width: 121px;
+    right: 0;
+
+    
+}
+
+.button-items {
+    flex-wrap: wrap;
+}
+
+.images-items {
+    justify-content: center;
+}
+
+.section-title-portfolio::before {
+    width: 90px;
+    left: 0;
+    
+    
+}
+
+.section-title-portfolio::after {
+    width: 89px;
+    right: 0;
+    
+}
+
+.flex-container-price {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 174px;
+    margin-right: 174px;
+}
+
+.section-title-price::before {
+    width: 121px;
+    left: 0;
+}
+
+.section-title-price::after {
+    width: 121px;
+    right: 0;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.container-full-image {
+    max-width: 768px;     
+}
+
+.section-title-video::before {
+    width: 117px;
+    left: 0;
+}
+
+.section-title-video::after {
+    width: 116px;
+    right: 0;
+}
+
+.section-contacts {
+    background: url('./assets/img/contacts-mini.jpg');
+    height: 600px;
+}
+
+.wrapper-contacts {
+    justify-content: center;
+    align-items: center;   
+    }
+
+.section-title-contact {
+    padding-right: 0px;
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.button-gold-contacts {
+margin-right: 0;
+
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
 
 
 }
