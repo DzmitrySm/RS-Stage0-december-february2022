@@ -257,7 +257,7 @@ transition: .3s;
     border: 2px solid #BDAE82;
     width: 274px;
     bottom: 39px;
-    right: 423px;
+    left: 0;
     
 }
 
@@ -267,7 +267,7 @@ transition: .3s;
     border: 2px solid #BDAE82;
     width: 274px;
     bottom: 39px;
-    right: -5px;
+    right: 0;
 
     
 }
@@ -636,6 +636,7 @@ color: #BDAE82;
 .placeholder-email {
 width: 450px;
 height: 50px;
+padding-left: 20px;
 margin-bottom: 20px;
 font-family: Inter;
 font-style: normal;
@@ -652,6 +653,7 @@ border-radius: 0px;
 .placeholder-tel {
 width: 450px;
 height: 50px;
+padding-left: 20px;
 margin-bottom: 20px;
 font-family: Inter;
 font-style: normal;
@@ -668,6 +670,7 @@ border-radius: 0px;
 .placeholder-textarea {
 width: 450px;
 height: 100px;
+padding-left: 20px;
 margin-bottom: 30px;
 resize: none;
 font-family: Inter;
@@ -757,8 +760,6 @@ transition: .3s;
 
 .header {
     background: url(./assets/img/hero-mini.jpg);
-    background-repeat: no-repeat;
-    background-position: center 0;
 }
 
 
@@ -770,6 +771,10 @@ transition: .3s;
 .container {
     max-width: 768px;
     padding: 0;
+}
+
+.logo-header {
+padding-left: 60px;
 }
 
 .nav-style {
@@ -834,6 +839,58 @@ transform: translateY(-50%) rotate(45deg);
 transform: translateY(-50%) rotate(-45deg);   
 }
 
+.hero-container {
+background: url(./assets/img/hero-mini.jpg);  
+}
+
+.section-with-pic {
+padding-bottom: 152px;
+}
+
+.main-title {
+padding-top: 78px;
+font-size: 32px;
+line-height: 64px;
+}
+
+.text-hero {
+line-height: 24px;
+}
+
+.padding-from-button-hero {
+line-height: 24px;
+padding-bottom: 60px;
+}
+
+.section-title {
+padding-top: 80px;
+font-size: 32px;
+}
+
+.skills-items {
+    padding-top: 45px;
+    row-gap: 76px;
+    column-gap: 44px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+}
+
+.card-foto-pic {
+padding-bottom: 30px;
+}
+
+.text-skill-item {
+line-height: 22px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.text-skill-item-modifier {
+padding-bottom: 80px;
+}
+
 .section-title::before {
     width: 121px;
     left: 0;
@@ -842,17 +899,27 @@ transform: translateY(-50%) rotate(-45deg);
 
 .section-title::after {
     width: 121px;
-    right: 0;
-
-    
+    right: 0;  
 }
 
 .button-items {
     flex-wrap: wrap;
+    padding-left: 162px;
+    padding-right: 161px;
+    
+}
+
+.button-transparent-modifier {
+    flex-basis: 46%;  
 }
 
 .images-items {
     justify-content: center;
+}
+
+.section-title-portfolio {
+font-size: 32px;
+padding-top: 80px;
 }
 
 .section-title-portfolio::before {
@@ -868,12 +935,29 @@ transform: translateY(-50%) rotate(-45deg);
     
 }
 
+.button-transparent-modifier {
+    
+}
+
+.price-item {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .flex-container-price {
     flex-direction: column;
     gap: 50px;
     margin-left: 174px;
     margin-right: 174px;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
+
+.section-title-price {
+    font-size: 32px;
+    padding-top: 80px;
+}
+
 
 .section-title-price::before {
     width: 121px;
@@ -885,12 +969,33 @@ transform: translateY(-50%) rotate(-45deg);
     right: 0;
 }
 
+.description-price {
+white-space: nowrap;
+}
+
+.coloured-button {
+    white-space: nowrap;
+    padding-right: 39px;
+    padding-left: 39px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+}
+
 .video-player {
     width: 100%;
 }
 
 .container-full-image {
     max-width: 768px;     
+}
+
+.section-title-video {
+padding-top: 80px;
+font-size: 32px;
+}
+
+.padding-bottom-for-video {
+padding-bottom: 50px;
 }
 
 .section-title-video::before {
@@ -903,6 +1008,10 @@ transform: translateY(-50%) rotate(-45deg);
     right: 0;
 }
 
+.button-player {
+    
+}
+
 .section-contacts {
     background: url('./assets/img/contacts-mini.jpg');
     height: 600px;
@@ -910,7 +1019,9 @@ transform: translateY(-50%) rotate(-45deg);
 
 .wrapper-contacts {
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    padding-bottom: 111px;
+    padding-right: 0;   
     }
 
 .section-title-contact {
@@ -918,6 +1029,7 @@ transform: translateY(-50%) rotate(-45deg);
     font-size: 32px;
     line-height: 64px;
 }
+
 
 .button-gold-contacts {
 margin-right: 0;
@@ -947,6 +1059,26 @@ margin-right: 0;
     align-items: center;
     padding-top: 28px;
     padding-bottom: 28px;
+}
+
+.text-footer-other {
+    line-height: 24.2px;
+}
+
+.text-footer {
+    padding-left: 0;
+    line-height: 24.2px;
+    padding-bottom: 29px;
+}
+
+.text-footer-modifier {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+}
+
+.wrapper-social-icons {
+    padding-inline-start: 0;
 }
 
 
