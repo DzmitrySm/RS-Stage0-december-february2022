@@ -25,10 +25,15 @@ body {
 
 .header-burger {
     width: 50px;
-    height: 50px;
+    height: 28px;
     position: relative;
     display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
 }
+
+
 
 .burger-line {
     display: block;
@@ -73,6 +78,7 @@ transform: translateY(-50%);
 
 .nav-style {
     margin-left: auto ;
+    transition: .3s;
 }
 
 .list-style {
@@ -719,6 +725,7 @@ padding-left: 20px;
 .social-icons {
     padding-right: 20px;
     transition: .3s;
+    cursor: pointer;
 }
 
 .social-icons:hover {
@@ -727,6 +734,7 @@ padding-left: 20px;
 
 .pinterest-icon {
     transition: .3s;
+    cursor: pointer;
 }
 
 .pinterest-icon:hover {
@@ -760,6 +768,7 @@ transition: .3s;
 
 .header {
     background: url(./assets/img/hero-mini.jpg);
+    overflow: hidden;
 }
 
 
@@ -771,24 +780,26 @@ transition: .3s;
 .container {
     max-width: 768px;
     padding: 0;
+    overflow: hidden;
 }
 
 .logo-header {
 padding-left: 60px;
+padding-right: 442px;
 }
 
 .nav-style {
     position: fixed;
-    margin: 0;
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 148px;
     background-color: black;
     z-index: 3;
     transform: translateX(100%);
     transition: .2s;
     overflow: hidden;
+    
 }
 
 .nav-style-active {
@@ -796,15 +807,20 @@ padding-left: 60px;
 }
 
 .list-item {
-    width: 100%;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 16px;
+width: 100%;
+padding-right: 0;
+padding-top: 0;
+padding-bottom: 16px;
 
 }
 
+.list-item:first-child {
+padding-top: 134px;
+}
+
 .list-style {
-    flex-direction: column;
+flex-direction: column;
+padding-left: 127px;
 } 
 
 .nav-link {
@@ -812,13 +828,22 @@ font-size: 35px;
 line-height: 73px;
 }
 
+.switch-ru {
+padding-right: 20px;
+}
+
+.switch-slash {
+padding-right: 18px;
+}
+
 .header-nav-close {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 20px;
-    right: -15px;
-    z-index: 4;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 20px;
+left: 506px;
+z-index: 4;
+transition: .3s;
 }
 
 .header-nav-close-line {
@@ -840,7 +865,10 @@ transform: translateY(-50%) rotate(-45deg);
 }
 
 .hero-container {
-background: url(./assets/img/hero-mini.jpg);  
+background: url(./assets/img/hero-mini.jpg);
+background-position: center -90px;
+background-repeat: no-repeat;
+overflow: hidden;
 }
 
 .section-with-pic {
@@ -910,7 +938,7 @@ padding-bottom: 80px;
 }
 
 .button-transparent-modifier {
-    flex-basis: 46%;  
+    width: 48%;
 }
 
 .images-items {
@@ -925,17 +953,11 @@ padding-top: 80px;
 .section-title-portfolio::before {
     width: 90px;
     left: 0;
-    
-    
 }
 
 .section-title-portfolio::after {
     width: 89px;
     right: 0;
-    
-}
-
-.button-transparent-modifier {
     
 }
 
@@ -983,6 +1005,12 @@ white-space: nowrap;
 
 .video-player {
     width: 100%;
+    height: 100%;
+
+}
+
+.wrapper-video {
+    height: 418px;
 }
 
 .container-full-image {
@@ -1008,7 +1036,11 @@ padding-bottom: 50px;
     right: 0;
 }
 
-.button-player {
+.button {
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+    
     
 }
 
@@ -1036,29 +1068,12 @@ margin-right: 0;
 
 }
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .flex-footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 22.8px;
+    padding-bottom: 0;
 }
 
 .text-footer-other {
@@ -1079,8 +1094,107 @@ margin-right: 0;
 
 .wrapper-social-icons {
     padding-inline-start: 0;
+    padding-bottom: 28px;
 }
 
+
+
+}
+
+
+@media screen and (max-width: 728px) {
+    
+.logo-header {
+    padding-right: 5%;
+}
+
+.section-title::before {
+    width: 20%;
+    left: 0;
+}
+
+.section-title::after {
+    width: 20%;
+    right: 0;
+}
+
+.nav-style {
+    left: 0;
+}
+
+.list-style {
+padding-left: 20px;
+}
+
+.header-burger {
+margin-right: 20px;
+}
+
+.header-nav-close {
+    left: 250px;
+}
+
+.skills-items {
+    justify-content: center;
+    align-items: center;
+}
+
+.button-items {
+   padding: 0 20px;
+}
+
+.button-transparent-modifier {
+    width: 100%;
+}
+
+.section-title-portfolio::before {
+    width: 5%;
+    left: 0;
+}
+
+.section-title-portfolio::after {
+    width: 5%;
+    right: 0;
+}
+
+
+.section-title-video::before {
+    width: 20%;
+    left: 0;
+
+}
+
+.section-title-video::after {
+    width: 20%;
+    right: 0;
+}
+
+.flex-container-price {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.section-title-price::before {
+    width: 20%;
+    left: 0;
+}
+
+.section-title-price::after {
+    width: 20%;
+    right: 0;
+}
+
+.placeholder-email {
+width: 80%;
+}
+
+.placeholder-tel {
+width: 80%;
+}
+
+.placeholder-textarea {
+width: 80%;
+}
 
 
 }
