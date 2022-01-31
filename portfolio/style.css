@@ -105,6 +105,7 @@ font-size: 20px;
 line-height: 50px;
 text-align: center;
 color: #BDAE82;
+cursor: pointer;
 }
 
 .switch-slash {
