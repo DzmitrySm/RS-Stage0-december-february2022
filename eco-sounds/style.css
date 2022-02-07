@@ -60,7 +60,9 @@ body {
     background: transparent;
     background-size: contain;
     
+    
 }
+
 
 .play {
     height: 160px;
@@ -79,7 +81,7 @@ body {
     background-image: url(./assets/svg/pause.svg);
     border: 0;
     outline: none;
-    
+    background-repeat: no-repeat ;
 }
 
 .flex-container-footer {
