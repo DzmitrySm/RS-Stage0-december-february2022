@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.literature {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+.wrapper-for-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quotes {
+    text-align: center;
+}
+
+.button-joke {
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.footer-item {
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    padding-left: 100px;
+}
+
+.wrapper-all {
+    display: flex;
+    flex-direction: column;
+}
