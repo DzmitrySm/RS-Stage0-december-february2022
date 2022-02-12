@@ -2,12 +2,22 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+.main {
+    min-height: calc(100vh - 94px) ;
+    background-color: #F1EAD0;
+    transition: .3s;
+}
+
 
 .literature {
     height: 300px;
     display: block;
     margin: 0 auto;
-    margin-top: 100px;
+    padding-top: 100px;
     
 }
 
@@ -19,13 +29,26 @@
 
 .quotes {
     text-align: center;
+    font-size: 32px;
+    padding: 0 70px;
+    transition: .3s;
 }
 
 .button-joke {
+    padding: 10px 20px;
     background-color: burlywood;
     color: white;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #6AA852;
+    border: none;
+    transition: .3s;
+}
+
+.button-joke:hover {
+    background-color: #0F7650;
+    color: #899D83;
 }
 
 .footer {
@@ -41,9 +64,28 @@
     text-decoration: none;
     align-self: center;
     padding-left: 100px;
+    transition: .3s;
 }
 
-.wrapper-all {
-    display: flex;
-    flex-direction: column;
+.footer-item:first-child {
+    padding-left: 20px;
+}
+
+.footer-item:hover {
+    color: #bdae82;
+}
+
+.logo-rs {
+    transition: .3s;
+}
+
+.logo-rs:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.active {
+    background-color: #5F5745;
+    color: #fff;
+    transition: .3s;
 }
