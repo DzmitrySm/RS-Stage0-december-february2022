@@ -12,6 +12,32 @@ body {
     transition: .3s;
 }
 
+.span-container {
+    display: flex;
+    justify-content: center;
+}
+
+.span-items {
+    font-size: 20px;
+}
+
+.ru {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ru:hover {
+    color:#bdae82 ;
+}
+
+.en {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.en:hover {
+    color:#bdae82 ;
+}
 
 .literature {
     height: 300px;
