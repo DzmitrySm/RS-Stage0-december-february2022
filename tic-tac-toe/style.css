@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper-general {
+    max-width: 100%;
+    
+   
+}
+
+.main {
+    height: calc(100vh - 94px);
+}
+
+.title-game {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.flex-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-play-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 302px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.tic-tac-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red; 
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-item {
+    padding-left: 80px;
+}
+
+.logo {
+    padding-right: 20px;
+}
+
