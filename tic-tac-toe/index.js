@@ -1,6 +1,10 @@
 const zone = document.querySelector('.wrapper-play-area')
 let move = 0
 let result = ''
+const content = document.querySelector('.content')
+const modalWindow = document.querySelector('.modal-wrapper')
+const buttonCloseModalWindow = document.querySelector('.button')
+const voiceOfWin = document.querySelector('audio')
 
 zone.addEventListener('click', e => {
 if(e.target.className === 'tic-tac-item') {
@@ -23,6 +27,7 @@ const check = () => {
         [2,4,6]
     ]
 
+
     for (let i = 0; i < arr.length; i++) {
     if (boxes[arr[i][0]].innerHTML == 'x' && boxes[arr[i][1]].innerHTML == 'x' && boxes[arr[i][2]].innerHTML == 'x') {
         result = 'Crosses'
@@ -42,5 +47,23 @@ const check = () => {
 }
 
 const whoWins = winner => {
-console.log(winner)
+    if (result === 'Zeros' || result === 'Crosses') {
+        content.innerHTML = `${winner} won! It took ${move} moves`
+        playAudio()  
+    } else {
+        content.innerHTML = `${winner}, try again! It took ${move} moves`
+        playAudio() 
+    }
+    modalWindow.classList.add('active')
+
+}
+
+buttonCloseModalWindow.addEventListener('click', () => {
+    modalWindow.classList.remove('active')
+    location.reload()
+})
+
+function playAudio() {
+    voiceOfWin.currentTime = 0;
+    voiceOfWin.play()
 }
